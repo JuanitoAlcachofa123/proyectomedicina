@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\MedicoController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +31,17 @@ Route::controller(indexController::class)->group(function(){
     Route::get('contactanos', 'contactanos');
 
     Route::get('sobre_nosotros', 'sobre_nosotros');
+
+
+});
+
+Route::controller(AdminController::class)->group(function(){
+
+    Route::get('admin/index',  'header_admin');
+
+    Route::get('admin/registro',  'registro_paciente_admin');
+
+    Route::get('admin/registro/paciente',  'añadir_paciente_admin');
 
 
 });

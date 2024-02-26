@@ -18,6 +18,7 @@
             <div class="form-value">
                 <!-- Formulario de inicio de sesión -->
                 <form id="loginForm" action="">
+                    @csrf
                     <h2>GENESIS</h2>
                     <!-- Campo de entrada para el correo electrónico -->
                     <div class="inputbox">
