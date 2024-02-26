@@ -18,6 +18,8 @@ use App\Http\Controllers\MedicoController;
 
 Route::get('/', HomeController::class);
 
+
+
 Route::controller(indexController::class)->group(function(){
 
     Route::get('index',  'index');
