@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\indexController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MedicoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +29,6 @@ Route::controller(indexController::class)->group(function(){
     Route::get('contactanos', 'contactanos');
 
     Route::get('sobre_nosotros', 'sobre_nosotros');
+
 
 });
